@@ -10,6 +10,7 @@ body{
 
 .h1Index{
     font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
 }
 
 
@@ -17,8 +18,21 @@ body{
 
 .principal{
     background-color: #ccb786;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px;
+    grid-gap:10px;
+    grid-template-areas: 
+    "principal principal principal"
+    "carrousel carrousel"
+    "parrafoIndex parrafoIndex parrafoIndex"
+    "titulosIndex titulosIndex titulosIndex"
+    "fotosIndex fotosIndex fotosIndex"
+    "footer footer footer";
 
 }
+
+
 .nav{
     justify-content: center;
     display: flex;
@@ -74,9 +88,12 @@ body{
 
 .fotosIndex a img{
     margin: 0px 5px;
-    border: solid 1px gray;
+    border: solid 1px;
     border-radius: 8px;
+    width: 270px;
+    height: 360px;
 }
+
 
 
 /* ----------------- Footer ----------------- */
@@ -238,3 +255,42 @@ body{
 .formContacto textarea{
     width: 100%;
 }
+
+
+/*--Responsive--*/
+
+@media screen and (max-width: 768px) {
+    .principal {
+      margin: 10px auto;
+      display: grid;
+      grid-gap: 5px;
+      grid-template-columns: 1fr;
+  
+      grid-template-areas:
+    "principal principal "
+    "carrousel carrousel"
+    "parrafoIndex parrafoIndex"
+    "titulosIndex titulosIndex"
+    "fotosIndex fotosIndex"
+    "footer footer";
+    }
+  }
+  
+  
+  @media screen and (max-width: 480px ) {
+      .principal {
+        margin: 15px auto;
+        display: grid;
+        grid-gap: 5px;
+        grid-template-columns: 1fr;         
+    
+        grid-template-areas:
+    "principal"
+    "carrousel"
+    "parrafoIndex"
+    "titulosIndex"
+    "fotosIndex"
+    "fotosIndex"
+    "footer";
+      }
+  }
