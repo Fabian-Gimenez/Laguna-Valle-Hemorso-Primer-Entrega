@@ -90,10 +90,15 @@ body{
     margin: 0px 5px;
     border: solid 1px;
     border-radius: 8px;
-    width: 270px;
+    width: 320px;
     height: 360px;
 }
 
+.fotosIndex a img.camping{
+    
+    width: 614px;
+    height: 360px;
+}
 
 
 /* ----------------- Footer ----------------- */
@@ -271,7 +276,8 @@ body{
     "carrousel carrousel"
     "parrafoIndex parrafoIndex"
     "titulosIndex titulosIndex"
-    "fotosIndex fotosIndex"
+    "titulosIndex"
+    "fotosIndex fotosIndex fotosIndex"
     "footer footer";
     }
   }
@@ -289,8 +295,7 @@ body{
     "carrousel"
     "parrafoIndex"
     "titulosIndex"
-    "fotosIndex"
-    "fotosIndex"
+    "fotosIndex fotosIndex"
     "footer";
       }
   }
